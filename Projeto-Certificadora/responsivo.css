@@ -1,0 +1,55 @@
+@media(max-width: 1280px) {
+
+    .projetos .container-projetos {
+        padding: 0 30px;
+    }
+
+    .projetos .container-projetos {
+        padding: 100px;
+    }
+    
+    #navLeft {
+        margin-right: 42%;
+        margin-left: 1%;
+        color: white;
+    }
+
+    #logoImg{
+        min-width: 100px;
+    }
+}
+
+@media(max-width: 800px){
+
+    #navLeft {
+        margin-right: 40%;
+        margin-left: 1%;
+        color: white;
+    }
+
+    #logoImg{
+        min-width: 100px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .projetos {
+        padding: 30px;
+    }
+
+    .projetos .container-projetos {
+        padding: 100px;
+    }
+
+    #navLeft {
+        margin-right: 37%;
+        margin-left: 1%;
+        color: white;
+    }
+
+    #logoImg{
+        min-width: 100px;
+    }
+
+}

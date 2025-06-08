@@ -127,3 +127,41 @@ img {
     background-color: AliceBlue;
     padding: 30px;
 }
+
+/*estilo dos artigos*/
+
+.artigos {
+    flex: 1;
+    margin: 0px auto;
+    max-width: 50%;
+    text-align: justify;
+    background-color: AliceBlue;
+    padding: 30px;
+}
+
+.artigos h1 {
+    color:black
+    /*colocar fonte*/
+}
+
+.artigos a{
+    color: purple
+}
+
+
+.img1{
+    display: block;
+    width: 66%;
+    height: 66%;
+    margin: 0 auto;
+}
+
+.img2{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+
+

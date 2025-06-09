@@ -24,13 +24,14 @@ a {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display:flex ;
+    justify-content: flex-start;
+    gap: 40px;
     align-items: center;
     background: linear-gradient(to top, transparent -200%, black 100%);
     width: 100%;
     height: 75px;
-    padding: 0 200px;
+    padding: 0 20px;
 }
 
 #logo {
@@ -70,7 +71,7 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #ffffff;
 }
 
 img {
@@ -110,14 +111,6 @@ img {
     padding: 30px;
 }
 
-#artigos {
-    flex: 1;
-    margin: 0px auto;
-    max-width: 70%;
-    text-align: center;
-    background-color: AliceBlue;
-    padding: 30px;
-}
 
 #sobre {
     flex: 1;
@@ -132,27 +125,72 @@ img {
 
 .artigos {
     flex: 1;
-    margin: 0px auto;
-    max-width: 50%;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #ffffffcc; /* branco translúcido */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
     text-align: justify;
-    background-color: AliceBlue;
-    padding: 30px;
 }
 
-.artigos h1 {
-    color:black
-    /*colocar fonte*/
+.artigos h2, .artigos h3, .artigos h4 {
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.artigos ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 20px;
+}
+
+.artigos li {
+    margin-bottom: 8px;
+}
+
+.artigos code {
+    background-color: #f1f1f1;
+    color: #e74c3c;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.artigos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+
+.artigos table, .artigos th, .artigos td {
+    border: 1px solid #ccc;
+}
+
+.artigos th, .artigos td {
+    padding: 10px;
+    text-align: left;
+}
+
+.artigos th {
+    background-color: #eef1f5;
+    color: #2c3e50;
 }
 
 .artigos a{
-    color: purple
+	text-decoration: none;
+	color: purple;
 }
-
 
 .img1{
     display: block;
-    width: 66%;
-    height: 66%;
+    width: 73%;
+    height: 73%;
     margin: 0 auto;
 }
 

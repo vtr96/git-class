@@ -126,7 +126,7 @@ img {
 .artigos {
     flex: 1;
     margin: 40px auto;
-    max-width: 800px;
+    max-width: 1250px;
     background-color: #ffffffcc; /* branco translúcido */
     padding: 40px;
     border-radius: 12px;

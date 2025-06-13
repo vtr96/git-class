@@ -1,205 +1,197 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	margin: 0px;
-	background-image: url(./background/backgroud.jpg);
-	background-size: cover;
-	font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./background/backgroud.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
 }
 
 a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
 }
 
-#navLeft {
-	margin-left: 1%;
-	color: white;
+a:hover {
+  color: #00bcd4;
 }
 
 header {
-    display:flex ;
-    justify-content: flex-start;
-    gap: 40px;
-    align-items: center;
-    background: linear-gradient(to top, transparent -200%, black 100%);
-    width: 100%;
-    height: 75px;
-    padding: 0 20px;
-}
-
-#logo {
-    display: flex;
-    width: 6%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-#logoLink {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#logoImg {
-    width: 100%;
-    height: auto;
-}
-
-#profile {
-    overflow: hidden;
-    border-radius: 100px;
-    width: 5vh;
-    height: 5vh;
-    margin-right: 1%;
-    margin-left: 1vh;
-}
-
-h1 {
-    text-align: center;
-    color: black;
-    font-size: xx-large;
-}
-
-a {
-	text-decoration: none;
-	color: #ffffff;
-}
-
-img {
-    z-index: 0;
-	max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+  width: 100%;
+  height: 75px;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .bRed {
-    display: flex;
-    border: solid #515151 2px;
-    border-radius: 100px;
-    width: 179px;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 0px 16px 0px #353535;
-	transition: 0.7s;
-    font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  border-radius: 100px;
+  background: #1f1f1f;
+  border: 2px solid #444;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #222 inset;
 }
 
-#inicio {
-    flex: 1;
-    margin: 0px auto;
-    max-width: 70%;
-    height: 200px;
-    text-align: center;
-    background-color: rgb(76, 81, 85);
-    padding: 30px;
+.bRed:hover {
+  background: #00bcd4;
+  color: black;
 }
 
-#objetivos {
-    flex: 1;
-    margin: 0px auto;
-    max-width: 70%;
-    text-align: center;
-    background-color: AliceBlue;
-    padding: 30px;
+#inicio, #objetivos, #sobre {
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 30px;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 
-
-#sobre {
-    flex: 1;
-    margin: 0px auto;
-    max-width: 70%;
-    text-align: center;
-    background-color: AliceBlue;
-    padding: 30px;
+#inicio h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #222;
 }
 
-/*estilo dos artigos*/
+#objetivos h2, #sobre h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+#objetivos ul {
+  list-style: square inside;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+#objetivos li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.github-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+  filter: grayscale(100%);
+}
+
+.github-icon:hover {
+  transform: scale(1.15);
+  filter: grayscale(0%);
+}
+
+.equipe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.membro {
+  background-color: #ffffffdd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.membro a {
+  display: inline-block;
+}
+
+.membro:hover {
+  transform: translateY(-5px);
+}
+
+.membro strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
 
 .artigos {
-    flex: 1;
-    margin: 40px auto;
-    max-width: 1250px;
-    background-color: #ffffffcc; /* branco translúcido */
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #333;
-    text-align: justify;
+  margin: 40px auto;
+  max-width: 1250px;
+  background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  text-align: justify;
 }
 
 .artigos h2, .artigos h3, .artigos h4 {
-    color: #2c3e50;
-    margin-top: 30px;
-    font-weight: 600;
+  color: #2c3e50;
+  margin-top: 30px;
+  font-weight: 600;
 }
 
 .artigos ul {
-    margin: 10px 0 20px 20px;
-    padding-left: 20px;
-}
-
-.artigos li {
-    margin-bottom: 8px;
+  margin: 10px 0 20px 20px;
+  padding-left: 20px;
 }
 
 .artigos code {
-    background-color: #f1f1f1;
-    color: #e74c3c;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: monospace;
+  background-color: #f1f1f1;
+  color: #e74c3c;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 .artigos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-}
-
-.artigos table, .artigos th, .artigos td {
-    border: 1px solid #ccc;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f9f9f9;
 }
 
 .artigos th, .artigos td {
-    padding: 10px;
-    text-align: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
 }
 
 .artigos th {
-    background-color: #eef1f5;
-    color: #2c3e50;
+  background-color: #eef1f5;
+  color: #2c3e50;
 }
 
-.artigos a{
-	text-decoration: none;
-	color: purple;
+.artigos a {
+  color: purple;
 }
-
-.img1{
-    display: block;
-    width: 73%;
-    height: 73%;
-    margin: 0 auto;
-}
-
-.img2{
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height: 80%;
-}
-
-
-

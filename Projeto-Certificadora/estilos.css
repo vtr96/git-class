@@ -13,6 +13,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   color: #333;
+  /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);*/
 }
 
 a {
@@ -142,6 +143,8 @@ img {
   display: block;
 }
 
+/*Página de artigos*/
+
 .artigos {
   margin: 40px auto;
   max-width: 1250px;
@@ -158,7 +161,7 @@ img {
 .artigos h2, .artigos h3, .artigos h4 {
   color: #2c3e50;
   margin-top: 30px;
-  font-weight: 600;
+  font-weight: 720;
 }
 
 .artigos ul {
@@ -196,19 +199,20 @@ img {
   color: purple;
 }
 
-/*Página de artigos*/
 
 .art_boxes{
   background-color: white;
-  margin-right: 50%;
-  border-radius: 8px;
+  margin-right: 59%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.25s ease-in-out;
 }
+
+.art_boxes h3{
+  text-align: center;
+}
+
 
 .art_boxes:hover{
   transform: scale(1.026);
-}
-
-.art_boxes img{
-  
-  border-radius: 8px;
 }

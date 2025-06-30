@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -26,32 +28,39 @@ a:hover {
 }
 
 header {
+  display: flex;
   justify-content: flex-start;
-  gap: 40px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
-  width: 100%;
-  height: 75px;
-  padding: 0 30px;
-  z-index: 10;
+  align-items: center;
+  gap: 30px;
+  height: 100px;
+  padding: 0 40px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .bRed {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 45px;
-  border-radius: 100px;
-  background: #1f1f1f;
-  border: 2px solid #444;
+  margin-right: 40px;
+  padding: 10px 60px;
+  font-size: 20px;
   font-family: "Bebas Neue", sans-serif;
-  color: white;
-  box-shadow: 0 0 10px #222 inset;
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  border-radius: 50px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .bRed:hover {
-  background: #00bcd4;
-  color: black;
+  background-color: #00bcd4;
+  color: #000000;
+  box-shadow: 0 0 12px #00bcd4;
 }
 
 #inicio, #objetivos, #sobre {
@@ -154,7 +163,6 @@ img {
 
 .artigos h2, .artigos h3, .artigos h4 {
   color: #2c3e50;
-  margin-top: 30px;
   font-weight: 720;
 }
 
@@ -193,20 +201,44 @@ img {
   color: purple;
 }
 
-
-.art_boxes{
-  background-color: white;
-  margin-right: 59%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  transition: transform 0.25s ease-in-out;
+.titulo-centralizado {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
 }
 
-.art_boxes h3{
+.artigos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.art_boxes {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.25s ease-in-out;
+  width: 45%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.art_boxes h3 {
+  padding: 12px;
+  background-color: #f4f4f4;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
 
-.art_boxes:hover{
-  transform: scale(1.026);
+.art_boxes img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.art_boxes:hover {
+  transform: scale(1.03);
 }

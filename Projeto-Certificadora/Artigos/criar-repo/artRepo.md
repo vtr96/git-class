@@ -58,3 +58,12 @@ Depois de preencher tudo, clique no botão verde **"Create repository"**.
 Pronto! Seu repositório foi criado com sucesso.
 
 <!--img-placeholder: Página de repositório-->
+
+## 🎬 Tutorial em Vídeo
+
+<iframe width="1170" height="610" 
+        src="https://www.youtube.com/embed/VSYMJKHdKOs" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>

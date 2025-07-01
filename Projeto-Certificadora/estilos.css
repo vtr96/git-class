@@ -65,21 +65,30 @@ header {
 }
 
 #github-logo {
-  margin-left: 1250px;
+  margin-left: auto;
   display: flex;
   align-items: center;
+  gap: 8px;
   height: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#github-logo:hover {
+  color: #00bcd4;
 }
 
 #github-logo img {
-  height: 54px;
-  width: 54px;
+  height: 40px;
+  width: 40px;
   transition: transform 0.3s ease;
-  font-size: 0.3rem;
 }
 
-#github-logo img:hover {
-  transform: scale(1.25);
+#github-logo:hover img {
+  transform: scale(1.15);
 }
 
 #inicio, #objetivos, #sobre {

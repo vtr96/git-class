@@ -11,11 +11,12 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url(./Imagens_Artigos/githubarts1.webp);
+  background-image: url(./background/githubarts1.webp);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   color: #333;
+  height: 100%;
 }
 
 a {
@@ -63,25 +64,42 @@ header {
   box-shadow: 0 0 12px #00bcd4;
 }
 
+#github-logo {
+  margin-left: 1250px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#github-logo img {
+  height: 54px;
+  width: 54px;
+  transition: transform 0.3s ease;
+}
+
+#github-logo img:hover {
+  transform: scale(1.25);
+}
+
 #inicio, #objetivos, #sobre {
   max-width: 1250px;
   margin: 0px auto;
   padding: 30px;
-  border-radius: 0px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.966);
   text-align: center;
+  font-family: arial;
 }
 
-#inicio h1 {
-  font-size: 2rem;
+#inicio h1, #objetivos h2, #sobre h2 {
+  font-size: 2.3rem;
   margin-bottom: 15px;
   color: #222;
 }
 
-#objetivos h2, #sobre h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #222;
+#inicio p, #sobre p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333131;
 }
 
 #objetivos ul {
@@ -92,7 +110,7 @@ header {
 
 #objetivos li {
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .github-icon {
@@ -146,6 +164,18 @@ img {
   display: block;
 }
 
+.rodape {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
 /*Página de artigos*/
 
 .artigos {
@@ -153,7 +183,6 @@ img {
   max-width: 1250px;
   background-color: rgba(211, 211, 211, 0.897);
   padding: 40px;
-  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   line-height: 1.7;
@@ -237,8 +266,9 @@ img {
 
 .art_boxes img {
   width: 100%;
-  height: auto;
+  height: 230px;
   display: block;
+  object-fit: cover;
 }
 
 

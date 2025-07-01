@@ -75,6 +75,7 @@ header {
   height: 54px;
   width: 54px;
   transition: transform 0.3s ease;
+  font-size: 0.3rem;
 }
 
 #github-logo img:hover {

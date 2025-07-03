@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padrões de Commit e Mensagens Semânticas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../estilos.css">
+</head>
+<body>
+
+  <header>
+    <a class="bRed" href="../../index.html">Início</a>
+    <a class="bRed" href="../../artigos.html">Artigos</a>
+    <a href="https://github.com" target="_blank" id="github-logo">GitHub<img src="../../background/GitHubLogo.png" alt="GitHub"/></a>
+  </header>
+
+  <div class="artigos">
+    <h2>Padrões de Commit e Mensagens Semânticas</h2>
+
+    <p>Quando trabalhamos com Git, é comum registrar alterações com mensagens de commit. No entanto, escrever mensagens claras e consistentes é essencial para manter a legibilidade do histórico do projeto. É aí que entram os <strong>padrões de commit</strong> e as <strong>mensagens semânticas</strong>.</p>
+
+    <h3>O que são mensagens semânticas?</h3>
+    <p>Mensagens semânticas seguem uma estrutura padronizada que descreve a intenção da mudança, facilitando a leitura e automações como <em>changelogs</em>, integração contínua e versionamento semântico.</p>
+
+    <p>O padrão mais utilizado é o <strong>Conventional Commits</strong>, que define a seguinte estrutura:</p>
+
+    <code>tipo(escopo opcional): descrição curta</code>
+
+    <p><strong>Exemplo:</strong></p>
+    <code>feat(login): adiciona botão de esqueci minha senha</code>
+
+    <h3>Tipos mais comuns</h3>
+    <ul>
+      <li><code>feat</code>: Adição de nova funcionalidade</li>
+      <li><code>fix</code>: Correção de bug</li>
+      <li><code>docs</code>: Alterações na documentação</li>
+      <li><code>style</code>: Formatação de código (espaços, ponto e vírgula, etc.)</li>
+      <li><code>refactor</code>: Refatoração sem alterar funcionalidades</li>
+      <li><code>test</code>: Adição ou modificação de testes</li>
+      <li><code>chore</code>: Tarefas de manutenção que não afetam o código (ex: build, dependências)</li>
+    </ul>
+
+    <h3>Exemplos práticos</h3>
+    <code>feat(cadastro): cria validação de email</code><br>
+    <code>fix(api): corrige bug na rota de autenticação</code><br>
+    <code>docs(README): adiciona instruções de instalação</code><br>
+    <code>refactor(user): melhora nome de variáveis</code>
+
+    <h3>Benefícios de seguir um padrão</h3>
+    <ul>
+      <li>Histórico de alterações mais legível</li>
+      <li>Facilita revisões de código e entendimento do que mudou</li>
+      <li>Ajuda na geração de changelogs automáticos</li>
+      <li>Permite versionamento semântico automatizado (ex: <code>npm version</code>)</li>
+    </ul>
+
+    <h3>Dica: use ferramentas para padronizar</h3>
+    <p>Existem ferramentas que ajudam a aplicar commits semânticos corretamente, como:</p>
+    <ul>
+      <li><strong>Commitizen</strong>: assistente interativo para gerar commits semânticos</li>
+      <li><strong>Husky + lint-staged</strong>: impedem commits fora do padrão</li>
+      <li><strong>Conventional Changelog</strong>: gera changelogs automáticos</li>
+    </ul>
+
+    <h3>Conclusão</h3>
+    <p>Usar mensagens semânticas é uma prática simples que traz grandes benefícios à manutenção e organização do projeto. Quando toda a equipe segue o mesmo padrão, o histórico se torna uma documentação viva, clara e útil para o futuro.</p>
+
+    <h3>Video tutorial:</h3>
+
+    <iframe width="1170" height="610" 
+        src="https://www.youtube.com/embed/flRklcdt5Xk" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
+
+
+  </div>
+
+</body>
+</html>

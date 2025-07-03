@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comandos Git Básicos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../estilos.css">
+</head>
+<body>
+
+  <header>
+    <a class="bRed" href="../../index.html">Início</a>
+    <a class="bRed" href="../../artigos.html">Artigos</a>
+    <a href="https://github.com" target="_blank" id="github-logo">GitHub<img src="../../background/GitHubLogo.png" alt="GitHub"/></a>
+  </header>
+
+  <div class="artigos">
+    <h2>Comandos Git Básicos para Iniciantes</h2>
+
+    <p>O Git é uma das ferramentas mais utilizadas no mundo do desenvolvimento para controle de versão de projetos. Com ele, é possível acompanhar o histórico de alterações, colaborar com outras pessoas e manter o código organizado. A seguir, vamos apresentar os comandos mais importantes do Git com explicações claras e diretas para quem está começando.</p>
+
+    <h3>1. <code>git init</code></h3>
+    <p>Este comando é usado para iniciar um novo repositório Git em um diretório local. Ao executá-lo, o Git cria uma pasta oculta chamada <code>.git</code> que contém todos os arquivos de controle de versão.</p>
+    <code>git init</code>
+    <p><strong>Exemplo prático:</strong> crie uma nova pasta com seu projeto, entre nela pelo terminal e execute o comando. Agora seu projeto já está sendo versionado!</p>
+
+    <h3>2. <code>git clone</code></h3>
+    <p>Usado para clonar (copiar) um repositório existente da internet para seu computador. Ele baixa todos os arquivos do projeto e o histórico de commits.</p>
+    <code>git clone https://github.com/usuario/repositorio.git</code>
+    <p><strong>Dica:</strong> Ideal para contribuir com projetos hospedados no GitHub.</p>
+
+    <h3>3. <code>git status</code></h3>
+    <p>Exibe o estado atual do seu repositório, incluindo arquivos modificados, não versionados ou prontos para serem enviados (staged).</p>
+    <code>git status</code>
+    <p><strong>Exemplo:</strong> Use esse comando com frequência para saber o que ainda precisa ser commitado.</p>
+
+    <h3>4. <code>git add</code></h3>
+    <p>Adiciona arquivos ao "staging area", preparando-os para serem commitados.</p>
+    <code>git add nome-do-arquivo</code><br>
+    <code>git add .</code> <small>(adiciona todas as alterações)</small>
+    <p><strong>Importante:</strong> Somente os arquivos adicionados com <code>add</code> serão incluídos no próximo commit.</p>
+
+    <h3>5. <code>git commit</code></h3>
+    <p>Registra as alterações adicionadas com uma mensagem descritiva. É como tirar uma "foto" do seu projeto naquele momento.</p>
+    <code>git commit -m "mensagem do commit"</code>
+    <p><strong>Dica:</strong> Use mensagens claras e diretas como <code>git commit -m "adiciona funcionalidade de login"</code>.</p>
+
+    <h3>6. <code>git push</code></h3>
+    <p>Envia os commits locais para o repositório remoto (como o GitHub).</p>
+    <code>git push origin main</code>
+    <p><strong>Observação:</strong> Você precisa ter permissão no repositório remoto para enviar alterações.</p>
+
+    <h3>7. <code>git pull</code></h3>
+    <p>Atualiza seu repositório local com as alterações feitas por outros colaboradores no repositório remoto.</p>
+    <code>git pull origin main</code>
+    <p><strong>Bom hábito:</strong> Sempre dê um <code>git pull</code> antes de começar a trabalhar para evitar conflitos.</p>
+
+    <h3>8. <code>git branch</code></h3>
+    <p>Cria ou lista branches (ramificações) do projeto. Cada branch pode representar uma nova funcionalidade ou teste.</p>
+    <code>git branch</code><br>
+    <code>git branch nova-funcionalidade</code>
+    <p><strong>Branches facilitam:</strong> trabalhar em paralelo sem afetar o código principal.</p>
+
+    <h3>9. <code>git checkout</code></h3>
+    <p>Troca de branch ou restaura arquivos. Muito útil para alternar entre diferentes versões do projeto.</p>
+    <code>git checkout nome-da-branch</code>
+    <p><strong>Dica:</strong> Combine com <code>git branch</code> para criar e depois mudar de branch.</p>
+
+    <h3>10. <code>git merge</code></h3>
+    <p>Une as alterações de uma branch em outra. Normalmente usado para juntar uma branch de desenvolvimento ao código principal.</p>
+    <code>git merge nome-da-branch</code>
+    <p><strong>Atenção:</strong> Resolva conflitos com cuidado se houver alterações em arquivos iguais nas branches.</p>
+
+    <h3>Conclusão</h3>
+    <p>Dominar os comandos básicos do Git é essencial para qualquer desenvolvedor. Eles permitem que você trabalhe de forma mais organizada, segura e colaborativa. Com o tempo, esses comandos se tornarão parte natural do seu fluxo de trabalho.</p>
+
+    <h3>Video tutorial: </h3>
+    <br>
+    <iframe width="1170" height="610" 
+        src="https://www.youtube.com/embed/qt0widbltnc" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+  </div>
+
+</body>
+</html>

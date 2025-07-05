@@ -1,36 +1,31 @@
-# 📘 Como Criar um Repositório no GitHub
+# Como Criar um Repositório no GitHub
 
 Este artigo ensina, passo a passo, como criar um novo repositório no GitHub, assumindo que você já tem uma conta criada na plataforma.
-<!--img-placeholder:
-Capa do artigo
--->
+
+![Capa](./Imagens/cover.jpg)
 ---
 
-## 🔐 1. Acesse sua conta no GitHub
+## 1. Acesse sua conta no GitHub
 
 Primeiramente, acesse o site do GitHub:
 
-[https://github.com](https://github.com)
+[https://github.com/login](https://github.com/login)
 
-Se necessário, faça login com seu usuário e senha.
+Faça login com seu usuário e senha ou [crie uma conta](https://github.com/signup?source=login) caso não tenha.
 
-
-
-<!--img-placeholder:
-Tela de login do GitHub ou página inicial logado
--->
+![Página inicial](./Imagens/new-repo1.png)
 
 ---
 
-## ➕ 2. Criar um novo repositório
+## 2. Criar um novo repositório
 
 No canto superior direito da tela, clique no ícone de **"+"** e selecione a opção **"New repository"**.
 
-![Página inicial](new-repo.png)
+![Página inicial](./Imagens/new-repo.png)
 
 ---
 
-## 📝 3. Preencha as informações do repositório
+## 3. Preencha as informações do repositório
 
 Você será redirecionado para uma página com um formulário. Preencha os seguintes campos:
 
@@ -41,23 +36,21 @@ Você será redirecionado para uma página com um formulário. Preencha os segui
     - `Private`: apenas você ou membros autorizados
 
 **Recomendações:**
-✅ Marque a opção **“Add a README file”**  
-✅ Opcionalmente, adicione um `.gitignore` se souber a linguagem que vai usar  
+✅ Marque a opção **“Add a README file”**
+✅ Opcionalmente, adicione um `.gitignore` se souber a linguagem que vai usar
 ✅ Também pode escolher uma licença, como MIT ou GPL
 
-<!--img-placeholder:
-Formulário preenchido com exemplos de nome, descrição, e opções marcadas
--->
+![Exemplo de preenchimento padrão](./Imagens/new-repo2.png)
 
 ---
 
-## 🚀 4. Clique em "Create repository"
+## 4. Clique em "Create repository"
 
 Depois de preencher tudo, clique no botão verde **"Create repository"**.
 
 Pronto! Seu repositório foi criado com sucesso.
 
-<!--img-placeholder: Página de repositório-->
+![Repositório criado](./Imagens/new-repo3.png)
 
 ## 🎬 Tutorial em Vídeo
 
